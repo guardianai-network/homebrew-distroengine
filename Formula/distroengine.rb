@@ -1,20 +1,20 @@
 class Distroengine < Formula
   desc "Standalone DistroEngine CLI for publishing, GTM, and attribution workflows"
   homepage "https://github.com/guardianai-network/distroengine-cli-releases"
-  version "0.1.7"
+  version "0.1.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/guardianai-network/distroengine-cli-releases/releases/download/distroengine-v0.1.7/distroengine-macos-apple-silicon"
-      sha256 "fbc85d5c91deca2e7ec7a36958f4c87ee7dec7856034fc71f067a8a834fbc621"
+      url "https://github.com/guardianai-network/distroengine-cli-releases/releases/download/distroengine-v0.1.8/distroengine-macos-apple-silicon"
+      sha256 "b74cbbc7e7336c4c6b43fc67ddfeac794991880c875e379faf11a084ae18aa50"
 
       def install
         bin.install "distroengine-macos-apple-silicon" => "distroengine"
       end
     else
-      url "https://github.com/guardianai-network/distroengine-cli-releases/releases/download/distroengine-v0.1.7/distroengine-macos-intel"
-      sha256 "b826d5680aa9c5737b79b1781f35a09a2341a483875a69413f7974925eb5b77e"
+      url "https://github.com/guardianai-network/distroengine-cli-releases/releases/download/distroengine-v0.1.8/distroengine-macos-intel"
+      sha256 "f4d3c0cbbfa93aa1db27bb57f5ad1a7ebb9aab103d12fd31a5380e8e53929a4b"
 
       def install
         bin.install "distroengine-macos-intel" => "distroengine"
@@ -23,8 +23,8 @@ class Distroengine < Formula
   end
 
   on_linux do
-    url "https://github.com/guardianai-network/distroengine-cli-releases/releases/download/distroengine-v0.1.7/distroengine-linux-x86_64"
-    sha256 "ca9ddafa58d732f54e161b12ac30733cefc02ff1c0868f54a2f08a19eac810a7"
+    url "https://github.com/guardianai-network/distroengine-cli-releases/releases/download/distroengine-v0.1.8/distroengine-linux-x86_64"
+    sha256 "722512b84e5ddbfde0ddfc9b28cbc59524136c3ebf807dac3f4c56e89da781ec"
 
     def install
       bin.install "distroengine-linux-x86_64" => "distroengine"
